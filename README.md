@@ -1,35 +1,23 @@
 # Adopt, don't Shop
 
-This is a paired project used in Turing School's Backend Program Module 2.
+Welcome to the "Adopt, Don't Shop" app! This application aims to connect animals needing homes to people who are searching for a pet. It can be used by pet seekers to fill out applications for specific pets, and by admins to approve or reject those applications.
 
-## Learning Goals
+## Features
+* Browse available pets and see specific information, such as name, breed, age and if the animal is adoptable or not.
+* Search for pets by name to make it easier to find the pet you're looking for.
+* Apply to adopt a pet by filling out an application with your name, address, phone number, and description of why you would be a good pet owner.
+* View all applications you've submitted and see their status (pending, approved, or rejected).
+* Admins can approve or reject applications.
 
-In this project, students will build upon the code in this repo to create a Pet Adoption Platform. Users will be able to apply to adopt pets, and Admins will be able to approve or reject applications and see statistics for the Shelters, Pets, and Applications in the system.
 
-* Build out CRUD functionality for a many to many relationship
-* Use ActiveRecord to write queries that join multiple tables of data together
-* Use MVC to organize code effectively, limiting the amount of logic included in views and controllers
-* Validate models and handle sad paths for invalid data input
-* Use flash messages to give feedback to the user
-* Use partials in views
-* Use `within` blocks in tests
-* Track user stories using GitHub Projects
-* Deploy your application to the internet
+## Setup
+* Fork and clone this repo
+* Install gem packages by running 'bundle install'
+* Set up the database by running 'rails db:{create,migrate,seed}'
 
-## Requirements
-* Project must use Rails 5.2.x, Ruby 2.7.4, and PostgreSQL
-* Use of `resources` on this project is not permitted
-* Use of scaffolding on this project is not permitted
-* Students wanting to use any extra gems on this project must first get permission from your instructors
-  * Pre-approved gems are `capybara, pry, faker, factorybot, orderly, simplecov, shoulda-matchers, launchy`
+## Schema
+![schema](/images/schema.png)
 
-## Project Phases
-
-1. [Set Up](./doc/set_up.md)
-1. [User Stories](./doc/user_stories.md)
-1. [Evaluation](./doc/evaluation.md)
-
-## Check In
-
-This project will have one Check In. During your Check In, you should be prepared to review your database schema for the many to many relationship, your deployment to Heroku, and your GitHub Projects board.
-
+## Future Iterations
+* Add styling to make the app more visually appealing
+* Add login functionality for admins and pet seekers
